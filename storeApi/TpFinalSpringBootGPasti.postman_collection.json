@@ -1,0 +1,489 @@
+{
+	"info": {
+		"_postman_id": "07a46aef-4ee8-4c9c-9caa-f18ee2913071",
+		"name": "TpFinalSpringBootGPasti",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/productos/crear",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n    {\r\n    \"codigo_producto\": 1,\r\n    \"nombre\": \"termo\",\r\n    \"marca\": \"Waterdog\",\r\n    \"costo\": 1800.0,\r\n    \"cantidad_disponible\": 8.0\r\n    }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/productos/crear",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productos",
+						"crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/productos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/productos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/productos/editar/1?codigo_nuevo=1&nombre=termo&marca=Waterdog&costo=1800.0&cantidad_disponible=4.0",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/productos/editar/1?codigo_nuevo=1&nombre=termo&marca=Waterdog&costo=1800.0&cantidad_disponible=4.0",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productos",
+						"editar",
+						"1"
+					],
+					"query": [
+						{
+							"key": "codigo_nuevo",
+							"value": "1"
+						},
+						{
+							"key": "nombre",
+							"value": "termo"
+						},
+						{
+							"key": "marca",
+							"value": "Waterdog"
+						},
+						{
+							"key": "costo",
+							"value": "1800.0"
+						},
+						{
+							"key": "cantidad_disponible",
+							"value": "4.0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/productos/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/productos/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/productos/falta_stock",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/productos/falta_stock",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productos",
+						"falta_stock"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/productos/eliminar/1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/productos/eliminar/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productos",
+						"eliminar",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/clientes/crear",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n    \"id_cliente\": 2,\r\n    \"nombre\": \"Juan\",\r\n    \"apellido\": \"Perez\",\r\n    \"dni\": \"22222222\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/clientes/crear",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clientes",
+						"crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/clientes/traer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/clientes/traer",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clientes",
+						"traer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/clientes/2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/clientes/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clientes",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/clientes/eliminar/2",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/clientes/eliminar/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clientes",
+						"eliminar",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/clientes/editar/2?id=2&nombre=Juan&apellido=Perez&dni=11111111",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/clientes/editar/2?id=2&nombre=Juan&apellido=Perez&dni=11111111",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clientes",
+						"editar",
+						"2"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						},
+						{
+							"key": "nombre",
+							"value": "Juan"
+						},
+						{
+							"key": "apellido",
+							"value": "Perez"
+						},
+						{
+							"key": "dni",
+							"value": "11111111"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/ventas/crear",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigo_venta\": 912,\r\n    \"fecha_venta\": \"2022-06-29\",\r\n    \"total\": 33.0,\r\n    \"listaProductos\": [\r\n      {\r\n        \"codigo_producto\": 1\r\n       },\r\n       {\r\n        \"codigo_producto\": 1\r\n       }\r\n       ],\r\n    \"unCliente\": {\r\n        \"id_cliente\": 2\r\n       }\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/ventas/crear",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ventas",
+						"crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/ventas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/ventas",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ventas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/ventas/3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/ventas/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ventas",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/ventas/productos/3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/ventas/productos/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ventas",
+						"productos",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/ventas/eliminar/3",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/ventas/eliminar/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ventas",
+						"eliminar",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/ventas/suma/2022-06-29",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/ventas/suma/2022-06-29",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ventas",
+						"suma",
+						"2022-06-29"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/ventas/mayor_venta",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/ventas/mayor_venta",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ventas",
+						"mayor_venta"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/ventas/editar/3?codigo_nuevo=3&fecha=2022-06-29&total=40.0&listaProductos=1&listaProductos=1&unCliente=2",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/ventas/editar/3?codigo_nuevo=3&fecha=2022-06-29&total=40.0&listaProductos=1&listaProductos=1&unCliente=2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ventas",
+						"editar",
+						"3"
+					],
+					"query": [
+						{
+							"key": "codigo_nuevo",
+							"value": "3"
+						},
+						{
+							"key": "fecha",
+							"value": "2022-06-29"
+						},
+						{
+							"key": "total",
+							"value": "40.0"
+						},
+						{
+							"key": "listaProductos",
+							"value": "1"
+						},
+						{
+							"key": "listaProductos",
+							"value": "1"
+						},
+						{
+							"key": "unCliente",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
